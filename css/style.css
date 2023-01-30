@@ -1,9 +1,14 @@
-/********** Template CSS **********/
+/********** All CSS **********/
 :root {
     --primary: #F77D0A;
     --secondary: #2B2E4A;
     --light: #F4F5F8;
     --dark: #1C1E32;
+}
+
+body{
+    overflow-x: hidden!important;
+    /* overflow-y: hidden!important; */
 }
 
 h1,
@@ -76,13 +81,25 @@ h6,
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    padding: 30px 15px;
+    padding: 10px 15px;
+    padding-top: 25px;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: var(--light);
     outline: none;
+}
+
+
+  /* home title */
+  .title_home_font{
+    font-size: 70px!important;
+  }
+  /*edite navbar */
+.position-relative{
+  margin-top: -5px;
+  /* z-index: -1; */
 }
 
 .navbar-dark .navbar-nav .nav-link:hover,
@@ -168,8 +185,15 @@ h6,
 }
 
 .rent-item:hover,
-.rent-item.active {
+.rent-item.active , .rent-item img{
     background: var(--secondary);
+}
+.img-fluid{
+    transition: all 0.5s;
+}
+.rent-item:hover .img-fluid 
+{    background: var(--secondary);
+    transform: scale(1.2);
 }
 
 .rent-item h4 {
@@ -313,3 +337,399 @@ h6,
     background: linear-gradient(rgba(28, 30, 50, .9), rgba(28, 30, 50, .9)), url(../img/bg-banner.jpg);
     background-attachment: fixed;
 }
+/* ############################################## */
+/*Start Sign In*/
+
+.sign-sec .boxes {
+    text-align: center;
+  }
+
+  .sign-sec .boxes .col-sm-12{
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sign-sec .boxes .left-sign h4,
+  .sign-sec .boxes .right-sign h4 {
+    color: #F77D0A;
+    font-size: 48px;
+   font-weight: 600;
+   
+  }
+  
+  .sign-sec .boxes .left-sign p,
+  .sign-sec .boxes .right-sign p {
+    color: #2B2E4A;
+    font-size: 14px;
+  }
+  
+  .sign-sec .boxes .left-sign
+  {
+    width: 330px;
+    margin: auto;
+  }
+  
+  .sign-sec .boxes .right-sign  {
+    width: 330px;
+  }
+  
+  .sign-sec .boxes .right-sign p {
+    text-align: justify;
+  }
+  
+  .sign-sec .boxes .left-sign p {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .sign-sec .boxes .left-sign .label-input,
+  .sign-sec .boxes .right-sign .label-input {
+    font-size: 15px;
+    color: #2B2E4A;
+    display: block;
+    text-align: left;
+    margin: 18px 0 0 0 ;
+  }
+  
+  .sign-sec .boxes .left-sign .input-form,
+  .sign-sec .boxes .right-sign .input-form  {
+    border-radius: 0;
+    height: 50px;
+    box-shadow: none;
+    border-color: #2b2e4a6e
+  }
+  
+  .sign-sec .boxes .left-sign .input-form:focus,
+  .sign-sec .boxes .right-sign .input-form:focus {
+    border-color: #2B2E4A;
+    border: 0;
+    box-shadow: 0 0 1px 1px #F77D0A ;
+  }
+  
+  .sign-sec .boxes .left-sign .checkbox,
+  .sign-sec .boxes .right-sign .checkbox {
+    text-align: left;
+  }
+  
+  .sign-sec .boxes .left-sign button,
+  .sign-sec .boxes .right-sign button  {
+    height: 50px;
+    background-color: #2B2E4A;;
+    border-color: #2B2E4A;;
+    color: #F77D0A;
+    transition: .3s;
+    border-radius: 0;
+    font-weight: 600;
+    font-size: 30px;
+    box-shadow: 0 1px 0.5px 1px #F77D0A ;
+
+    margin: 23px 0;
+  }
+
+  .div-create_account{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  a , a:hover , a:focus{
+    text-decoration: none;
+  }
+
+  .create_account{
+    /* width: 70px; */
+    font-size: 18px;
+    padding: 10px 15px;
+    background-color: #FFF;
+    color: #2B2E4A;
+    border: 1px solid #2B2E4A;
+    text-align: center;
+    font-weight: 600;
+    text-decoration: none;
+    margin: 50px 0;
+    transition: all 0.5s;
+    border-radius: 7px;
+    letter-spacing: 1.5px;
+  }
+
+  .create_account:hover{
+   background-color: #2B2E4A;
+   color: #F77D0A;
+   font-weight: 600;
+  }
+
+
+  
+  .sign-sec .boxes .left-sign button:hover,
+  .sign-sec .boxes .right-sign button:hover {
+    background-color: #FFF;
+    border-color: #2B2E4A;;
+    color: #F77D0A;
+  }
+  
+  .sign-sec .boxes .right-sign .right-p {
+    font-size: 11px;
+  }
+  
+  @media (min-width: 320px) and (max-width: 767px) {
+    .sign-sec .boxes .right-sign {
+      margin: auto;
+    }
+  
+    .sign-sec .boxes .left-sign p {
+      margin-bottom: 50px !important;
+    }
+  
+    .sign-sec  {
+      padding: 30px 0 !important
+    }
+  }
+  
+  /*End Sign In*/
+  
+
+  /* ##################### */
+  /* image logo */
+  .navbar-brand img{
+    width: 115px;
+  }
+
+  .phone{
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #2B2E4A;
+    font-size: 15px;
+    transition: all 0.5s;
+  }
+
+  .phone:hover{
+    transform: scale(1.09);
+    color: #2B2E4A;
+
+  }
+
+  .phone i{
+    color:#33be33;
+  }
+
+  /* icon social media */
+  .icon_youtube , .icon_facebook , .icon_instagram , .icon_linkedin , .icon_twitter, .phone i{
+    font-size: 20px;
+    transition: all 0.5s;
+  }
+
+  .icon_youtube:hover , .icon_facebook:hover , .icon_instagram:hover , .icon_linkedin:hover , .icon_twitter:hover{
+  transform: scale(1.3);
+}
+
+  .icon_youtube{
+    color: #f10000;
+  }
+
+  .icon_facebook , .icon_facebook:hover{
+    color:#385395;
+  }
+  .icon_instagram, .icon_instagram:hover{
+
+    color: #e7185f;
+  }
+
+  .icon_twitter , .icon_twitter:hover{
+
+    color: #1c93e4;
+  }
+
+  .icon_linkedin , .icon_linkedin:hover{
+
+    color: #006191;
+  }
+
+ .allitem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+   
+}
+.items{
+    background-color: rgba(255, 255, 255, 0.87);
+    border-radius: 7px;
+    padding: 0px 15px;  
+    margin-bottom: 0.5px;
+    box-shadow: 0 0 1px 1.2px #F77D0A;
+
+}
+
+
+  .social_sec{
+    background-color: #2B2E4A;
+  }
+
+
+
+
+  @media (max-width: 642.98px) { 
+       /* home title */
+       .title_home_font{
+        font-size: 35px!important;
+      }
+  }
+
+  .btn_home{
+    margin-top: 60px!important;
+  }
+
+  /* btn nav */
+
+  .btn_reserve{
+    font-weight: 600;
+    letter-spacing: 1px;
+    height: 35px;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-top: 7px!important;
+    border-radius: 4px;
+    transition: all 0.5s;
+  }
+  
+  .btn_reserve:hover{
+  color: #F77D0A;
+  background-color: #2B2E4A;
+  }
+
+  
+/* Start Section Tap Taxi */
+.nav-tabs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tap-taxi-home .nav-tabs li a , .tap-taxi-home .nav-tabs>li.active>a:focus , .tap-taxi-home .nav-tabs>li.active>a:hover {
+  font-size: 18px;
+  font-weight: 600;
+  border: 0;
+  letter-spacing: 1px;
+}
+
+
+
+ .nav-tabs .active{
+    background-color: #2B2E4A !important;
+    color: #F77D0A!important;
+    font-size: 18px;
+    font-weight: 600;
+    border: 0;
+    letter-spacing: 1px;
+}
+
+.nav-tabs .active.detailes_book{
+  color: #fff!important;
+}
+
+
+
+.tap-taxi-home .nav-pills>li>a:hover, .tap-taxi-home .nav-tabs>li>a:hover {
+  background-color: #fff;
+  border: 0;
+}
+
+.tap-taxi-home .nav-pills>li>a, .tap-taxi-home .nav-tabs>li>a {
+  padding: 18px 80px;
+  font-size: 19px;
+  color: #2B2E4A;
+  border-radius: 3px;
+}
+.detailes_book{ 
+  color: #fff!important;
+  /* margin-top: 30px; */
+}
+
+
+.title_form{
+  font-size: 28px;
+}
+
+@media (max-width: 475.98px) { 
+  .tap-taxi-home .nav-tabs li a , .tap-taxi-home .nav-tabs>li.active>a:focus , .tap-taxi-home .nav-tabs>li.active>a:hover {
+    font-size: 13px;
+    padding: 9px;
+    border-radius: 3px;
+  }
+  .title_form_input{
+    font-size:  14px;
+  }
+  .title_form{
+font-size: 19px;
+  }
+}
+
+
+@media (min-width: 476.98px) and (max-width:812px) { 
+  .tap-taxi-home .nav-tabs li a , .tap-taxi-home .nav-tabs>li.active>a:focus , .tap-taxi-home .nav-tabs>li.active>a:hover {
+    font-size: 15px;
+    padding: 11px;
+    border-radius: 3px;
+  }
+  .title_form_input{
+    font-size:  16px;
+  }
+  .title_form{
+  font-size: 21px;
+  }
+}
+
+
+/* button download detailes booking */
+.download_detailes{
+  padding: 10px 20px ;
+  letter-spacing: 1px;
+  font-weight: 600;
+  width: 200px;
+  /* background-color: #2B2E4A; */
+  /* color: #F77D0A; */
+  transition: all 0.5s;
+}
+div li{
+  list-style: none;
+}
+
+.item_detailes_book::before {
+  content: "\2022";  
+  color: #F77D0A; 
+  font-weight: 600; 
+  display: inline-block; 
+  width: 1em; 
+  margin-left: -1.5em;
+  font-size: 25px;
+}
+
+.item_detailes_book span{
+ color: #2B2E4A;
+ font-weight: 600;
+ letter-spacing: 1px;
+ font-size: 17px;
+}
+
+
+/* @media (min-width: 768px) and (max-width:991px) { 
+  .tap-taxi-home .nav-tabs li a , .tap-taxi-home .nav-tabs>li.active>a:focus , .tap-taxi-home .nav-tabs>li.active>a:hover {
+    font-size: 15px;
+    padding: 11px;
+    border-radius: 3px;
+  }
+  .title_form_input{
+    font-size:  16px;
+  }
+  .title_form{
+  font-size: 21px;
+  } */
+/* } */
+
+
+
+/* End Section Tap Taxi */
+
